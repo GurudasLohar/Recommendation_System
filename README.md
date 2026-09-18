@@ -1,5 +1,11 @@
 # Content-Based Movie Recommendation System
 
+## Live Demo
+**Deployed URL:** https://recommendation-system-1q3h.onrender.com
+
+## GitHub Repository
+https://github.com/GurudasLohar/Recommendation_System
+
 ## Dataset
 movies.csv — sample movie titles + overview text (30 movies).  
 Educational sample similar to Kaggle/TMDB movie datasets  
@@ -28,26 +34,23 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Git & GitHub (Task 7)
+## Git & GitHub
 ```
 git init
 git add .
 git commit -m "content-based movie recommender"
-# create repo on GitHub, then:
-git remote add origin https://github.com/<your-username>/<repo>.git
+git remote add origin https://github.com/GurudasLohar/Recommendation_System.git
 git branch -M main
 git push -u origin main
 ```
 
-## Deploy on Render (Task 8)
+## Deploy on Render
 1. Create account on render.com
 2. New → Web Service → connect GitHub repo
 3. Settings:
    - Build command: `pip install -r requirements.txt`
    - Start command: `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
-4. Deploy and test the live URL
+4. Deploy
 
-## Notes
-- Content-based only (no collaborative filtering)
-- Cosine similarity measures closeness of TF-IDF vectors
-- Keep UI simple as required
+**Live app:** https://recommendation-system-1q3h.onrender.com
+
